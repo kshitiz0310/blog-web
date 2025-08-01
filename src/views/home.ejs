@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="/home.css" />
   </head>
   <body>
-    <nav >
-      <a href="/posts/add">Write New Blog</a>
-      <% if(decode){ %>
-        <a href="/users/logout">Logout</a>
-      <% } else { %>
-        <a href="/users/login">Login</a>
-      <% } %>
-    </nav>
+  <nav>
+  <div class="brand-pill">The Blog Website</div>
+
+  <div class="nav-links">
+    <a href="/posts/add">Write New Blog</a>
+    <% if(decode){ %>
+      <a href="/users/logout">Logout</a>
+    <% } else { %>
+      <a href="/users/login">Login</a>
+    <% } %>
+  </div>
+</nav>
+
+
 
     <div class="filter">
       <form action="/" method="get">
@@ -28,6 +34,7 @@
         <button type="submit">Apply Filter</button>
       </form>
     </div>
+    
 
    
     <div class="container">
